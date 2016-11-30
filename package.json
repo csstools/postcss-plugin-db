@@ -1,0 +1,43 @@
+{
+  "name": "postcss-plugin-db",
+  "version": "1.0.0",
+  "description": "A database of PostCSS plugins",
+  "author": "Jonathan Neal <jonathantneal@hotmail.com>",
+  "license": "CC0-1.0",
+  "repository": "jonathantneal/postcss-db",
+  "homepage": "https://github.com/jonathantneal/postcss-db#readme",
+  "bugs": "https://github.com/jonathantneal/postcss-db/issues",
+  "main": "plugins.json",
+  "files": [
+    "plugins.json"
+  ],
+  "scripts": {
+    "test": "echint -c node_modules/editor-config-10up/.editorconfig && eslint *.js && jscs *.js"
+  },
+  "engines": {
+    "node": ">=6.9.1"
+  },
+  "devDependencies": {
+    "echint": "^2.0.0",
+    "editor-config-10up": "github:jonathantneal/editor-config-10up",
+    "eslint": "^3.11.0",
+    "eslint-config-10up": "github:jonathantneal/eslint-config-10up",
+    "jscs": "^3.0.7",
+    "jscs-config-10up": "github:jonathantneal/jscs-config-10up",
+    "postcss-tape": "github:jonathantneal/postcss-tape"
+  },
+  "eslintConfig": {
+    "extends": "10up",
+    "parserOptions": {
+      "sourceType": "module"
+    }
+  },
+  "jscsConfig": {
+    "preset": "10up"
+  },
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin"
+  ]
+}
